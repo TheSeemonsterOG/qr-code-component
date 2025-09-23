@@ -33,7 +33,7 @@ transform-origin: center center;
 
 
 .card{
-width: var(--card-w);
+width: var(--card-w); 
 background: var(--card);
 border-radius: var(--card-radius);
 box-shadow: 0 24px 28px rgba(31,47,86,.15);
