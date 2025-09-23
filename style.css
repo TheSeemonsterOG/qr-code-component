@@ -1,0 +1,68 @@
+:root{
+--page:#d5e1ef;
+--card:#ffffff;
+--title:#1f314f;
+--muted:#68778d;
+--brand:#2c7dfa;
+
+
+--card-w: 360px;
+--card-radius: 18px;
+}
+
+
+html, body { height: 100%; }
+body{
+margin:0;
+font-family: 'Outfit', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+background: var(--page);
+color: var(--title);
+display:grid;
+place-items:center;
+padding: 32px;
+}
+
+
+.card-scale{
+position: relative;
+--scale-x: calc((100vw - 32px) / var(--card-w));
+--scale: min(1, var(--scale-x));
+transform: scale(var(--scale));
+transform-origin: center center;
+}
+
+
+.card{
+width: var(--card-w);
+background: var(--card);
+border-radius: var(--card-radius);
+box-shadow: 0 24px 28px rgba(31,47,86,.15);
+overflow: hidden;
+}
+
+
+.qr-wrapper{
+padding: 16px;
+}
+
+
+.qr{
+display:block;
+width:100%;
+aspect-ratio:1 / 1;
+background: var(--brand);
+object-fit: cover;
+border-radius: 12px;
+}
+
+
+.content{ padding: 22px 22px 26px; text-align: center; }
+
+
+h1{ font-size: 22px; line-height: 1.2; margin: 0 0 12px; color: var(--title); font-weight: 700; }
+p{ margin: 0; font-size: 15px; line-height: 1.4; color: var(--muted); font-weight: 300; }
+
+
+@media (max-width: 420px){
+body{ padding: 20px; }
+}
