@@ -33,7 +33,7 @@ transform-origin: center center;
 
 
 .card{
-width: var(--card-w); 
+width: var(--card-w);
 background: var(--card);
 border-radius: var(--card-radius);
 box-shadow: 0 24px 28px rgba(31,47,86,.15);
@@ -59,8 +59,8 @@ border-radius: 12px;
 .content{ padding: 22px 22px 26px; text-align: center; }
 
 
-h1{ font-size: 22px; line-height: 1.2; margin: 0 0 12px; color: var(--title); font-weight: 700; }
-p{ margin: 0; font-size: 15px; line-height: 1.4; color: var(--muted); font-weight: 300; }
+h1{ font-size: 22px; line-height: 1.2; margin: 0 0 12px; color: var(--title); font-weight: 700; letter-spacing: 0px; }
+p{ margin: 0; font-size: 15px; line-height: 1.4; color: var(--muted); font-weight: 300; letter-spacing: 0.2px;}
 
 
 @media (max-width: 420px){
